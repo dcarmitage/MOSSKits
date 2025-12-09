@@ -70,4 +70,13 @@ MIT
 
 ---
 
+## Changelog
+
+| Date | Update |
+|------|--------|
+| 2024-12-08 | Added design system theme ([THEME.png](./patches/THEME.png)) |
+| 2024-12-08 | Initial release |
+
+---
+
 *Your cloud. Your data. Your rules.*
