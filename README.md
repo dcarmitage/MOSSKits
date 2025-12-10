@@ -2,50 +2,72 @@
 
 **Massive Open Source Software Kits**
 
-Specifications and reference implementations for building your own infrastructure.
+Spec-first reference implementations you can drop into any AI coding tool to build real infrastructure.
+
+**[mosskits.com](https://mosskits.com)**
 
 ---
 
-## Kits
+## How It Works
 
-| Kit | Description |
-|-----|-------------|
-| [CloudKit](./CloudKit/CloudKit.md) | Self-hosted iCloud on Cloudflare |
-| [PhysicsKit](./PhysicsKit/PhysicsKit.md) | Multi-body physics with non-linear tire simulation |
-
----
-
-## Structure
-
-Each kit follows a **spec-first** structure:
-
-```
-KitName/
-├── KitName.md   # Specification (the product)
-└── demo/        # Reference implementation
-```
-
-The markdown specification is the primary artifact. The `demo/` folder contains working code that implements the spec.
+1. Browse the kits below
+2. Click the demo to see it in action
+3. Download the `.md` spec file
+4. Type "build this" in your AI coding assistant
+5. Get a working implementation
 
 ---
 
-## Quick Start
+## Recently Updated
+
+| Kit | Last Update | What Changed |
+|-----|-------------|--------------|
+| CloudKit | Dec 10, 2025 | Initial release |
+| PhysicsKit | Dec 10, 2025 | Initial release |
+
+---
+
+## Kit Showcase
 
 ### CloudKit
 
-```bash
-cd CloudKit/demo
-npx wrangler login
-./deploy.sh
-```
+**Self-hosted iCloud on Cloudflare**
+
+Upload audio → Get transcripts → AI summaries → Smart search. All on your own infrastructure.
+
+| | |
+|---|---|
+| **Spec** | [CloudKit.md](./CloudKit/CloudKit.md) |
+| **Demo** | [Try it](./CloudKit/demo/) |
+| **Stack** | Cloudflare Workers, D1, R2, React, Hono |
+
+---
 
 ### PhysicsKit
 
-```bash
-cd PhysicsKit/demo
-pip install -e ".[all]"
-python -m physicskit drift
+**Multi-body physics with non-linear tire simulation**
+
+Pacejka Magic Formula tire model, vehicle dynamics, drift simulation with real-time visualization.
+
+| | |
+|---|---|
+| **Spec** | [PhysicsKit.md](./PhysicsKit/PhysicsKit.md) |
+| **Demo** | [Try it](./PhysicsKit/demo/) |
+| **Stack** | Python, NumPy, Pygame |
+
+---
+
+## Kit Structure
+
+Every kit follows the same pattern:
+
 ```
+KitName/
+├── KitName.md   # The spec (THIS IS THE PRODUCT)
+└── demo/        # Reference implementation
+```
+
+The markdown specification is the primary artifact. Download it, feed it to your AI coding tool, and build.
 
 ---
 
