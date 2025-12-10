@@ -18,42 +18,12 @@ Spec-first reference implementations you can drop into any AI coding tool to bui
 
 ---
 
-## Recently Updated
+## Kits
 
-| Kit | Last Update | What Changed |
-|-----|-------------|--------------|
-| CloudKit | Dec 10, 2025 | Initial release |
-| PhysicsKit | Dec 10, 2025 | Initial release |
-
----
-
-## Kit Showcase
-
-### CloudKit
-
-**Self-hosted iCloud on Cloudflare**
-
-Upload audio → Get transcripts → AI summaries → Smart search. All on your own infrastructure.
-
-| | |
-|---|---|
-| **Spec** | [CloudKit.md](./CloudKit/CloudKit.md) |
-| **Demo** | [Try it](./CloudKit/demo/) |
-| **Stack** | Cloudflare Workers, D1, R2, React, Hono |
-
----
-
-### PhysicsKit
-
-**Multi-body physics with non-linear tire simulation**
-
-Pacejka Magic Formula tire model, vehicle dynamics, drift simulation with real-time visualization.
-
-| | |
-|---|---|
-| **Spec** | [PhysicsKit.md](./PhysicsKit/PhysicsKit.md) |
-| **Demo** | [Try it](./PhysicsKit/demo/) |
-| **Stack** | Python, NumPy, Pygame |
+| Kit | Description | Spec | Demo | Last Updated |
+|-----|-------------|------|------|--------------|
+| **CloudKit** | Self-hosted iCloud on Cloudflare | [CloudKit.md](./CloudKit/CloudKit.md) | [Try it](./CloudKit/demo/) | Dec 10, 2025 |
+| **PhysicsKit** | Multi-body physics with tire simulation | [PhysicsKit.md](./PhysicsKit/PhysicsKit.md) | [Try it](./PhysicsKit/demo/) | Dec 10, 2025 |
 
 ---
 
