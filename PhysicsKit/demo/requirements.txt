@@ -1,0 +1,12 @@
+# Core dependencies
+numpy>=1.21.0
+
+# Visualization (optional)
+pygame>=2.0.0
+matplotlib>=3.5.0
+
+# Development (optional)
+pytest>=7.0.0
+pytest-cov>=4.0.0
+black>=23.0.0
+mypy>=1.0.0

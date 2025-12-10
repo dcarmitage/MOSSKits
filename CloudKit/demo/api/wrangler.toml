@@ -1,0 +1,22 @@
+name = "cloudkit-api"
+main = "src/index.ts"
+compatibility_date = "2024-12-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "cloudkit-db"
+# TODO: Replace with your database ID after running: npx wrangler d1 create cloudkit-db
+database_id = "YOUR_DATABASE_ID"
+
+[[r2_buckets]]
+binding = "FILES"
+bucket_name = "cloudkit-files"
+
+[[queues.producers]]
+queue = "cloudkit-processing"
+binding = "QUEUE"
+
+[[queues.consumers]]
+queue = "cloudkit-processing"
+max_batch_size = 1
+max_retries = 3
