@@ -2,19 +2,11 @@
 
 **Massive Open Source Software Kits**
 
-Spec-first reference implementations you can drop into any AI coding tool to build real infrastructure.
+Production-ready specs you can drop into any AI coding tool to build real infrastructure.
+
+Pick a kit. Download the `.md` file. Tell your AI assistant "build this." Get working code.
 
 **[mosskits.com](https://mosskits.com)**
-
----
-
-## How It Works
-
-1. Browse the kits below
-2. Click the demo to see it in action
-3. Download the `.md` spec file
-4. Type "build this" in your AI coding assistant
-5. Get a working implementation
 
 ---
 
@@ -27,24 +19,24 @@ Spec-first reference implementations you can drop into any AI coding tool to bui
 
 ---
 
-## Kit Structure
-
-Every kit follows the same pattern:
+## What's in a Kit?
 
 ```
 KitName/
-├── KitName.md   # The spec (THIS IS THE PRODUCT)
-└── demo/        # Reference implementation
+├── KitName.md   # The spec — this is the product
+└── demo/        # Working reference implementation
 ```
 
-The markdown specification is the primary artifact. Download it, feed it to your AI coding tool, and build.
+The `.md` file contains everything: architecture, data models, API endpoints, UI specs. It's designed to be fed directly to Claude, Cursor, Copilot, or any AI coding assistant.
+
+The `demo/` folder proves the spec works. Run it, deploy it, or use it as reference.
 
 ---
 
 ## License
 
-MIT
+Free to use, modify, and distribute. Build whatever you want — commercial or personal. See [LICENSE](./LICENSE) for details.
 
 ---
 
-**[MOSS](https://mosskits.com)** - Build anything.
+**[MOSS](https://mosskits.com)** — Build anything.
