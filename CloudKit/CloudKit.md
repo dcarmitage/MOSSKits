@@ -6,8 +6,8 @@
 
 ```bash
 # 1. Clone this repo
-git clone https://github.com/anthropics/moss-cloudkit.git
-cd moss-cloudkit
+git clone https://github.com/dcarmitage/MOSSKits.git
+cd MOSSKits
 
 # 2. Login to Cloudflare
 npx wrangler login
