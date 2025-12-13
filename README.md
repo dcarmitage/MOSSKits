@@ -1,42 +1,76 @@
 # MOSSKits
 
-**Massive Open Source Software Kits**
+**You don't code. Your AI does. MOSSKits tells it what to build.**
 
-Production-ready specs you can drop into any AI coding tool to build real infrastructure.
-
-Pick a kit. Download the `.md` file. Tell your AI assistant "build this." Get working code.
-
-**[mosskits.com](https://mosskits.com)**
+Fork this repo. Open in any AI coding tool. Say "build CloudKit". Watch it build.
 
 ---
 
-## Kits
+## Quick Start
 
-| Kit | Description | Spec | Demo | Last Updated |
-|-----|-------------|------|------|--------------|
-| **CloudKit** | Self-hosted iCloud on Cloudflare | [CloudKit.md](./CloudKit/CloudKit.md) | [Try it](./CloudKit/demo/) | Dec 10, 2025 |
-| **PhysicsKit** | Multi-body physics with tire simulation | [PhysicsKit.md](./PhysicsKit/PhysicsKit.md) | [Try it](./PhysicsKit/demo/) | Dec 10, 2025 |
+1. **Fork** this repo
+2. **Open** in Claude Code, Cursor, Windsurf, or any AI coding tool
+3. **Say:** "build CloudKit" (or any kit name)
+4. **Watch** your AI build while you supervise
+5. **Deploy** with guided help
+
+That's it. No coding required.
 
 ---
 
-## What's in a Kit?
+## Available Kits
+
+| Kit | What You Get | Platform | Spec |
+|-----|--------------|----------|------|
+| **CloudKit** | Self-hosted iCloud — file storage, transcription, AI search | Cloudflare | [CloudKit.md](./CloudKit/CloudKit.md) |
+| **PunditKit** | Prediction market research agent | Cloudflare | [PunditKit.md](./PunditKit/PunditKit.md) |
+| **PhysicsKit** | Multi-body physics simulation | Browser | [PhysicsKit.md](./PhysicsKit/PhysicsKit.md) |
+| **EvalKit** | Benchmark for AI coding tools | Meta | [EvalKit.md](./EvalKit/EvalKit.md) |
+
+---
+
+## How It Works
+
+Each kit has a **spec file** — a detailed markdown document that tells your AI exactly what to build.
 
 ```
-KitName/
-├── KitName.md   # The spec — this is the product
-└── demo/        # Working reference implementation
+CloudKit/
+├── CloudKit.md        # The spec (your AI reads this)
+├── README.md          # Human description
+└── demo/              # Reference implementation
 ```
 
-The `.md` file contains everything: architecture, data models, API endpoints, UI specs. It's designed to be fed directly to Claude, Cursor, Copilot, or any AI coding assistant.
+The spec includes architecture, data models, API endpoints, UI patterns — everything needed to build production software.
 
-The `demo/` folder proves the spec works. Run it, deploy it, or use it as reference.
+Your AI reads the spec. You supervise. You end up with working software.
+
+---
+
+## Who Is This For?
+
+**Beginners:** No coding experience needed. Just tell your AI what to build and help with deployment.
+
+**Experts:** Skip the boilerplate. Get a complete architecture in minutes. Customize from there.
+
+---
+
+## Infra Guides
+
+Platform-specific patterns your AI uses while building:
+
+| Guide | For |
+|-------|-----|
+| [Cloudflare.md](./Infra/Cloudflare.md) | Workers, D1, R2, Pages, Queues |
+| [Modal.md](./Infra/Modal.md) | GPU workloads, ML inference |
+| [Tinker.md](./Infra/Tinker.md) | Model fine-tuning |
+| [ClaudeAgent.md](./Infra/ClaudeAgent.md) | Multi-agent systems |
 
 ---
 
 ## License
 
-Free to use, modify, and distribute. Build whatever you want — commercial or personal. See [LICENSE](./LICENSE) for details.
+MIT. Build whatever you want — commercial or personal.
 
 ---
 
-**[MOSS](https://mosskits.com)** — Build anything.
+**[mosskits.com](https://mosskits.com)**
