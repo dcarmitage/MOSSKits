@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer components {
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/50;
+  }
+
+  /* Card hover effect */
+  .card-hover {
+    @apply transition-colors hover:bg-card/80;
+  }
+
+  /* Status badges */
+  .badge-watching {
+    @apply bg-muted text-muted-foreground;
+  }
+
+  .badge-researching {
+    @apply bg-warning/20 text-warning;
+  }
+
+  .badge-traded {
+    @apply bg-success/20 text-success;
+  }
+
+  .badge-closed {
+    @apply bg-muted text-muted-foreground;
+  }
+
+  /* Agent colors */
+  .agent-scout {
+    @apply text-blue-400;
+  }
+
+  .agent-researcher {
+    @apply text-purple-400;
+  }
+
+  .agent-analyst {
+    @apply text-amber-400;
+  }
+
+  .agent-trader {
+    @apply text-success;
+  }
+
+  .agent-chronicler {
+    @apply text-muted-foreground;
+  }
+
+  .agent-system {
+    @apply text-muted-foreground;
+  }
+
+  /* Score bars */
+  .score-bar {
+    @apply h-2 rounded-full bg-muted overflow-hidden;
+  }
+
+  .score-bar-fill {
+    @apply h-full rounded-full transition-all;
+  }
+
+  .score-high {
+    @apply bg-success;
+  }
+
+  .score-medium {
+    @apply bg-warning;
+  }
+
+  .score-low {
+    @apply bg-destructive;
+  }
+}
+
+@layer utilities {
+  /* Gradient text */
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-white to-white/60;
+  }
+
+  /* Fey-style card */
+  .fey-card {
+    @apply bg-card border border-border rounded-lg;
+  }
+
+  /* Animated pulse for live indicators */
+  .pulse-live {
+    animation: pulse-live 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse-live {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+
+  /* Number display */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}

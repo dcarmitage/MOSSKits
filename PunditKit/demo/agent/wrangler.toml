@@ -1,0 +1,30 @@
+name = "pundit-agent"
+main = "src/index.ts"
+compatibility_date = "2024-12-01"
+
+[observability]
+enabled = true
+
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+invocation_logs = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "pundit-db"
+database_id = "6ba4ef2b-6fbd-48ac-ad9b-8be73dab62cf"
+
+[[r2_buckets]]
+binding = "ARTIFACTS"
+bucket_name = "pundit-artifacts"
+
+[[queues.producers]]
+queue = "pundit-research"
+binding = "RESEARCH_QUEUE"
+
+[[queues.consumers]]
+queue = "pundit-research"
+max_batch_size = 10
+max_concurrency = 10
+max_retries = 3
